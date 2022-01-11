@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const a={formEl:document.querySelector("form"),emailEl:document.querySelector("input"),textEreaEl:document.querySelector("textarea")},l="feedback-form-state",r={email:"",message:""},o=function(){const e=JSON.parse(localStorage.getItem(l));e&&(a.emailEl.value=e.email,a.textEreaEl.value=e.message)};o(),a.formEl.addEventListener("input",(0,e.default)(e=>{e.target===a.emailEl&&(r.email=e.target.value),e.target===a.textEreaEl&&(r.message=e.target.value),localStorage.setItem(l,JSON.stringify(r))},500)),a.formEl.addEventListener("submit",e=>{e.preventDefault();const t=JSON.parse(localStorage.getItem(l));console.log(t),a.formEl.reset(),localStorage.removeItem(l)});
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/parcel-project-template/03-feedback.021de900.js.map
+//# sourceMappingURL=/goit-js-hw-08-bc13-last/03-feedback.021de900.js.map
